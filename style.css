@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto-light';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto-light';
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title{
+  font-size: 300%;
+  font-family: 'Roboto';
+  color: #272750;
+}
+
+
+.text-icon{
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+.text-icon p{
+  padding: 0;
+  margin: 8px;
+}
+.text-icon p:last-child{
+  margin-bottom: 20px;
+}
+
+.main-text img{
+  width: 15px;
+  margin-right: 4px;
+}
+
+.main-text{
+  font-size: 14px;
+}
+
+label{
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #272750;
+}
+
+input{
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 14px;
+  width: 100%;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+button{
+  padding: 14px;
+  background-color: #272750;
+  text-align: center;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover{
+  background: linear-gradient(90deg, #ec4376, #ffae00);
+  box-shadow: 2px 4px 8px  #ffae00;
+  cursor: pointer;
+}
+
+.label-email{
+  display: flex;
+}
+.label-email label{
+  margin-right: auto;
+}
+
+.email-check{
+  font-size: 14px;
+  color: #ff5100e0;
+}
+
+.success-alert{
+  visibility: hidden;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+}
+.success-alert h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.success-alert p{
+  margin-bottom: 20px;
+}
+.success-alert img{
+  display: block;
+  width: 50px;
+  margin: 10px 0;
+}
+
+
+@media screen and (max-width: 580px) {
+   .container{
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: none;
+ 
+   }  
+   #item1{
+    order: 1;
+    padding-left: 50px;
+   }
+   #item2{
+    order: 2;
+    padding-left: 40px;
+   }
+   .attribution{
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+   }
+   .success-alert{
+    width: 60%;
+   }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
